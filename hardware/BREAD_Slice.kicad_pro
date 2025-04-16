@@ -237,6 +237,10 @@
           "drill": 0.25
         },
         {
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
           "diameter": 1.0,
           "drill": 0.5
         },
@@ -724,6 +728,10 @@
     [
       "66043bca-a260-4915-9fce-8a51d324c687",
       "Root"
+    ],
+    [
+      "3d3f0c6a-9ddf-476c-9eea-1d835ad6a15b",
+      "EC Driver + Amp"
     ]
   ],
   "text_variables": {}
