@@ -1896,7 +1896,7 @@
 					)
 				)
 			)
-			(symbol "CD4060BM_0_1"
+			(symbol "CD4060BM_Binary_Counter_0_1"
 				(polyline
 					(pts
 						(xy 7.62 5.08) (xy 7.62 -22.86)
