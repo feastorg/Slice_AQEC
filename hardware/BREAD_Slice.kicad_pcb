@@ -4572,7 +4572,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:CD4060-L"
+	(footprint "KMLib_IC_SMD:CD4060-L"
 		(layer "F.Cu")
 		(uuid "3f97c7cb-a20b-4e3c-92fb-1d74478ddeac")
 		(at 154.97 80.44245 90)
@@ -5889,7 +5889,7 @@
 			)
 		)
 	)
-	(footprint "SparkFun-LED:WS2812-5050-4PIN"
+	(footprint "KMLib_IC_SMD:WS2812-5050-4PIN"
 		(locked yes)
 		(layer "F.Cu")
 		(uuid "4ec4e171-1549-4997-8479-26c2f6f0dd92")
@@ -8659,7 +8659,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:03154311010"
+	(footprint "KMLib_Connectors:03154311010"
 		(layer "F.Cu")
 		(uuid "7ff5812a-a6b8-41af-8954-45d81ffc9ab8")
 		(at 180 80.725 -90)
@@ -10411,7 +10411,7 @@
 			)
 		)
 	)
-	(footprint "kml-custom:Thermal Pad"
+	(footprint "KMLib_Mounting:Thermal_Pad"
 		(layer "F.Cu")
 		(uuid "91f7aa6c-6edf-407e-9412-7655c2cabadb")
 		(at 131.8 121.45)

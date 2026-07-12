@@ -1800,7 +1800,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "kml-custom:CD4060BM"
+		(symbol "KMLib_IC_Digital:CD4060BM_Binary_Counter"
 			(pin_names
 				(offset 0.254)
 			)
@@ -6068,7 +6068,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kml-custom:03154311010"
+		(property "Footprint" "KMLib_Connectors:03154311010"
 			(at 57.15 52.4 0)
 			(hide yes)
 			(show_name no)
@@ -7554,7 +7554,7 @@
 		)
 	)
 	(symbol
-		(lib_id "kml-custom:CD4060BM")
+		(lib_id "KMLib_IC_Digital:CD4060BM_Binary_Counter")
 		(at 130.81 30.48 0)
 		(mirror y)
 		(unit 1)
@@ -7585,7 +7585,7 @@
 				)
 			)
 		)
-		(property "Footprint" "kml-custom:CD4060-L"
+		(property "Footprint" "KMLib_IC_SMD:CD4060-L"
 			(at 130.81 30.48 0)
 			(hide yes)
 			(show_name no)
