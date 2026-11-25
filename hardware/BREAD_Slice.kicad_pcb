@@ -10156,6 +10156,7 @@
 		(property "Reference" "R7"
 			(at -1.875 -2.2 180)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "6e3c30e5-0eb6-4692-9d64-4d915e4f4c12")
 			(effects
 				(font
@@ -10650,13 +10651,13 @@
 		(descr "SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP2"
-			(at 2.175 -0.95 90)
+			(at -2.05 -0.25)
 			(layer "F.SilkS")
 			(uuid "20dc0518-4296-481b-a49d-0048761c274d")
 			(effects
 				(font
-					(size 0.5 0.5)
-					(thickness 0.125)
+					(size 0.8 0.8)
+					(thickness 0.12)
 				)
 			)
 		)
@@ -11183,13 +11184,13 @@
 		(descr "SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP1"
-			(at 2.125 -0.975 90)
+			(at 0.55 -1.7 90)
 			(layer "F.SilkS")
 			(uuid "bb5099c7-b6c1-45ad-af58-01cf10b63e01")
 			(effects
 				(font
-					(size 0.5 0.5)
-					(thickness 0.125)
+					(size 0.8 0.8)
+					(thickness 0.12)
 				)
 			)
 		)
