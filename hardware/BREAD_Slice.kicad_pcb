@@ -3390,13 +3390,13 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R1"
-			(at 0.129168 -5.62 90)
+			(at 0.0225 -5.575 90)
 			(layer "F.SilkS")
 			(uuid "1cb85fa3-14ac-4b50-95b9-804fb6ae00e9")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.8 0.8)
+					(thickness 0.12)
 				)
 			)
 		)
@@ -3790,13 +3790,13 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C17"
-			(at 3.075 -0.025 0)
+			(at 3.0875 0.2 0)
 			(layer "F.SilkS")
 			(uuid "626fd29c-07b8-4c18-bc42-789c9b7729f9")
 			(effects
 				(font
-					(size 1 1)
-					(thickness 0.15)
+					(size 0.8 0.8)
+					(thickness 0.12)
 				)
 			)
 		)
@@ -6728,7 +6728,7 @@
 		(descr "SOD-323")
 		(tags "SOD-323")
 		(property "Reference" "D2"
-			(at -3.025 0.025 0)
+			(at 0 1.595 0)
 			(layer "F.SilkS")
 			(uuid "1f98bb9f-7724-4239-b873-ba89082fbe10")
 			(effects
@@ -7028,7 +7028,7 @@
 		(descr "SOD-323")
 		(tags "SOD-323")
 		(property "Reference" "D3"
-			(at 2.95 -0.025 0)
+			(at 2.55 -0.005 90)
 			(layer "F.SilkS")
 			(uuid "29a4cfb3-de37-461c-9def-d6862542c20a")
 			(effects
@@ -8402,7 +8402,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C6"
-			(at 2.7625 0.05 0)
+			(at 2.7375 -0.13 0)
 			(layer "F.SilkS")
 			(uuid "d3ae7766-c532-4f22-90c3-1d400e68d08b")
 			(effects
