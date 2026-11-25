@@ -13923,7 +13923,7 @@
 		)
 	)
 	(gr_text "12V->5V Reg"
-		(at 131.85 114.555 0)
+		(at 135.35 112 0)
 		(layer "B.SilkS")
 		(uuid "056806f2-56cf-4fe8-84b5-e588bde33964")
 		(effects
