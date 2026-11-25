@@ -1,0 +1,11 @@
+* BAS416 low-leakage switching diode (Nexperia), fitted here: Nexperia supplies no
+* SPICE model on the product page.
+* IS and N are fitted to two maximum forward-voltage points of the datasheet
+* (Table 7, Tj = 25 C): VF = 0.9 V at 1 mA and 1.0 V at 10 mA.
+*   N  = (1.0 - 0.9) / (Vt ln 10) = 0.1 / (0.02585 * 2.3026) = 1.68
+*   IS = 1e-3 / exp(0.9 / (N Vt))  = 1.0e-12 A
+* So VF at 0.5 mA is 0.87 V (worst case); the datasheet's typical curve sits lower.
+* Not modelled: series resistance (VF above ~10 mA), capacitance, recovery, and the
+* datasheet's reverse leakage (max 5 nA at 75 V, 25 C; ~13 nA at 70 C, Fig. 4). The
+* reverse current here is IS (1 pA) plus ngspice's GMIN.
+.model BAS416 D(IS=1e-12 N=1.68)

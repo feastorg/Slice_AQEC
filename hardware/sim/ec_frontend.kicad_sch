@@ -4919,7 +4919,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N5819WS"
+		(property "Value" "BAS416"
 			(at 250.19 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4967,6 +4967,30 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 250.19 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sim.Library" "models/bas416.lib"
+			(at 250.19 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Sim.Name" "BAS416"
 			(at 250.19 132.08 0)
 			(hide yes)
 			(show_name no)

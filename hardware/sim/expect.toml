@@ -11,6 +11,13 @@
 # Rail headroom: the SLOJ068 model clamps the output at VE = 2.2 V plus a diode drop
 # inside each rail, about +/-3.45 V on +/-5 V. U2C swings furthest, by Vf beyond
 # TIA_OUT, so it clamps first. A measure without `expect` is printed, not checked.
+#
+# D4 (BAS416, the A0 clamp) uses models/bas416.lib: IS = 1e-12, N = 1.68, fitted to the
+# datasheet's maximum VF at 1 mA and 10 mA (the derivation is in the file). Its reverse
+# current is IS plus GMIN, about 2.6 pA at 1.6 V, so it shifts EC_IN by about 26 nV
+# through R12 (ngspice 44.2, R100 = 100). That is a model figure, not the part's: the
+# datasheet allows up to 5 nA at 25 C and about 13 nA at 70 C (Fig. 4), 0.13 mV through
+# R12. So no leakage-offset measure is checked here.
 
 mirrors = [
   "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10", "R11", "R12", "C16",
