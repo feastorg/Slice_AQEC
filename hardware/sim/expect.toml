@@ -1,0 +1,107 @@
+# Expected behaviour of the EC front end, worked by hand from the schematic.
+#
+# Excitation: CD4060 Q4 swings VSS..VDD = -5..+5 V (V3). U2A is inverting with gain
+# -R11/R10 = -2k/51k = -0.03922, so the BNC centre sees Vexc = -/+0.1961 V.
+# U2B is a transimpedance amplifier: TIA_OUT = -Vexc_bnc * Rf / Rp, Rf = R4 = 820 (JP2,
+# K = 1). U2C + U2D are a precision full-wave rectifier (all 36k): EC_IN = |TIA_OUT|
+# (U2C output = -(TIA_OUT + Vf) on the + half, D2 conducting). R12/C16 corner 796 kHz.
+# So EC_IN = 5 * (2k/51k) * 820 / Rp = 160.8 / Rp volts.
+# JP1 (K = 10) puts R3 = 8200 = 10 * R4 in place of R4: the same curve at 10x Rp.
+#
+# Rail headroom: the SLOJ068 model clamps the output at VE = 2.2 V plus a diode drop
+# inside each rail, about +/-3.45 V on +/-5 V. U2C swings furthest, by Vf beyond
+# TIA_OUT, so it clamps first. A measure without `expect` is printed, not checked.
+
+mirrors = [
+  "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10", "R11", "R12", "C16",
+  "D2", "D3", "D4",
+  "U201=U2", "U202=U2", "U203=U2", "U204=U2",
+]
+
+# DC: V3 held at +5 V (Q4 high), probe R100 swept 20 ohm .. 20 kohm.
+
+# 160.8 / 1000 = 0.1608 V (1 mS/cm on a K = 1 cell)
+[[measure]]
+name = "ec_at_1k"
+analysis = "dc"
+meas = "find v(/ec_in) at=1000"
+expect = 0.1608
+rtol = 0.02
+
+# 160.8 / 10000 = 0.01608 V (0.1 mS/cm)
+[[measure]]
+name = "ec_at_10k"
+analysis = "dc"
+meas = "find v(/ec_in) at=10000"
+expect = 0.01608
+rtol = 0.03
+
+# 160.8 / 100 = 1.608 V (10 mS/cm)
+[[measure]]
+name = "ec_at_100"
+analysis = "dc"
+meas = "find v(/ec_in) at=100"
+expect = 1.608
+rtol = 0.02
+
+# TIA output carries the sign: +0.1961 * 820 / 100 = +1.608 V on the Q4-high half
+[[measure]]
+name = "tia_at_100"
+analysis = "dc"
+meas = "find v(/tia_out) at=100"
+expect = 1.608
+rtol = 0.02
+
+# U2C output = -(1.608 + Vf); Vf of the default diode (IS = 1e-14) at 2 x 1.608/36k
+# = 89 uA is 0.0259 * ln(89e-6 / 1e-14) = 0.59 V, so -2.20 V
+[[measure]]
+name = "u2c_at_100"
+analysis = "dc"
+meas = "find v(/u2c_out) at=100"
+expect = -2.20
+rtol = 0.05
+
+# Ceiling, informational (no expect, never fails): set by the model's output clamp
+# (VC/VE = 2.2 V plus a diode drop), not by the TL074H on the board. ngspice 44.2 gave
+# 3.39 V at 20 ohm, with TIA_OUT at +3.43 V and U2C at -3.46 V. The hand figure of
+# 2.9 V took Vf = 0.6 V on top of the U2C clamp; with U2C clamped the loop is open and
+# D2 carries almost no current, so EC_IN sits within ~0.07 V of U2C's output.
+[[measure]]
+name = "ec_ceiling"
+analysis = "dc"
+meas = "max v(/ec_in)"
+
+# TRAN: 28.4 Hz square (period 35.2 ms), R100 = 1 kohm; second period read.
+
+# Q4-high half (35.2 .. 52.8 ms): 0.1608 V
+[[measure]]
+name = "tran_high_half"
+analysis = "tran"
+meas = "find v(/ec_in) at=48.4m"
+expect = 0.1608
+rtol = 0.02
+
+# Q4-low half (52.8 .. 70.4 ms), the other rectifier branch: 0.1608 V
+[[measure]]
+name = "tran_low_half"
+analysis = "tran"
+meas = "find v(/ec_in) at=66m"
+expect = 0.1608
+rtol = 0.02
+
+# Average over a whole period, edges included: 0.1608 V
+[[measure]]
+name = "tran_average"
+analysis = "tran"
+meas = "avg v(/ec_in) from=35.2m to=70.4m"
+expect = 0.1608
+rtol = 0.02
+
+# AC about the Q4-high operating point (D2 conducting): small-signal gain
+# (2k/51k) * 820 / 1000 = 0.03216 at the 28 Hz excitation
+[[measure]]
+name = "ac_gain_28hz"
+analysis = "ac"
+meas = "find vm(/ec_in) at=28"
+expect = 0.03216
+rtol = 0.02

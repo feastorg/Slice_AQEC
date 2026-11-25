@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "filename": "ec_frontend.kicad_pro",
+    "version": 3
+  },
+  "schematic": {
+    "ngspice": {
+      "model_mode": 4
+    }
+  },
+  "sheets": [
+    [
+      "3b1f6a2e-5c0d-4e8a-9f61-aec0e0c0f001",
+      "Root"
+    ]
+  ]
+}
