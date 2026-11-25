@@ -7738,7 +7738,7 @@
 				)
 			)
 		)
-		(property "Value" "1N5819WS"
+		(property "Value" "BAS416"
 			(at 0.1 1.9 90)
 			(layer "F.Fab")
 			(uuid "cf03da31-7c11-4c94-8cf0-9597b34992f3")
@@ -7749,7 +7749,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheet.lcsc.com/lcsc/2204281430_Guangdong-Hottech-1N5819WS_C191023.pdf"
+		(property "Datasheet" "https://www.nexperia.com/product/BAS416"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7762,7 +7762,7 @@
 				)
 			)
 		)
-		(property "Description" "40V 600mV@1A 1A SOD-323 Schottky Barrier Diodes, SOD-323"
+		(property "Description" "75V 0.2A low-leakage switching diode, SOD-323"
 			(at 0 0 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -7775,7 +7775,7 @@
 				)
 			)
 		)
-		(property ki_fp_filters "D*SOD?323*")
+		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
 		(path "/3d3f0c6a-9ddf-476c-9eea-1d835ad6a15b/db6de127-d14b-47c6-b7b1-66691cc217d0")
 		(sheetname "/EC Driver + Amp/")
 		(sheetfile "ec_driver_amp.kicad_sch")
