@@ -8802,13 +8802,13 @@
 		(descr "031-5431-1010-1")
 		(tags "Connector")
 		(property "Reference" "J2"
-			(at -1.27 -16 90)
+			(at -1.275 -1.85 90)
 			(layer "F.SilkS")
 			(uuid "8fadfa65-513b-4721-b813-5229e5af8dca")
 			(effects
 				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
+					(size 1 1)
+					(thickness 0.15)
 				)
 			)
 		)
