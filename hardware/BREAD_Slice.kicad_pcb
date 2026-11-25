@@ -5683,7 +5683,7 @@
 		(descr "Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor handsolder")
 		(property "Reference" "R5"
-			(at 2.8 -0.025 90)
+			(at 2.8 -0.33 90)
 			(layer "F.SilkS")
 			(uuid "acb0fde7-67fe-4a8e-9912-df1303d29fd4")
 			(effects
@@ -8202,7 +8202,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C12"
-			(at -0.15 4.13 0)
+			(at 2.3 0.455 90)
 			(layer "F.SilkS")
 			(uuid "01f06588-53f6-4f19-96c9-71e4004db009")
 			(effects
@@ -9954,7 +9954,7 @@
 		(descr "Capacitor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf, https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 		(tags "capacitor handsolder")
 		(property "Reference" "C10"
-			(at -2.4 1.375 90)
+			(at 2.3 0.02 90)
 			(layer "F.SilkS")
 			(uuid "2474b550-9719-4bdd-8db6-b9c2bb0adbb5")
 			(effects
@@ -10651,7 +10651,7 @@
 		(descr "SMD Solder Jumper, 1x1.5mm Triangular Pads, 0.3mm gap, open")
 		(tags "solder jumper open")
 		(property "Reference" "JP2"
-			(at -2.05 -0.25)
+			(at -2.05 -0.25 0)
 			(layer "F.SilkS")
 			(uuid "20dc0518-4296-481b-a49d-0048761c274d")
 			(effects
@@ -14453,7 +14453,7 @@
 		(uuid "1b5c2553-4281-4f0e-927a-97906aacc917")
 	)
 	(via
-		(at 171.05 86.65)
+		(at 171.4 86.65)
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
@@ -15495,7 +15495,7 @@
 		(uuid "4ff31577-362d-4f60-866f-0ef0e5ab7558")
 	)
 	(via
-		(at 171.05 88.15)
+		(at 171.4 88.15)
 		(size 0.8)
 		(drill 0.4)
 		(layers "F.Cu" "B.Cu")
